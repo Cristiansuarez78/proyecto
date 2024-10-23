@@ -1,0 +1,90 @@
+body {
+  background-color: #f0f8ff; /* Fondo de la página */
+  font-family: Arial, sans-serif; /* Fuente de la página */
+}
+
+.character-card {
+  border: 1px solid #ccc; /* Borde gris claro */
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.2s ease-in-out; /* Efecto de transformación */
+  background-color: #ffffff; /* Fondo blanco para la tarjeta */
+}
+
+.character-card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+}
+
+img {
+  border-radius: 50%; /* Imágenes en forma de círculo */
+  width: 150px; /* Ancho de la imagen */
+  height: 150px; /* Alto de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+}
+
+.select-button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 3px; /* Bordes redondeados del botón */
+  padding: 5px 10px; /* Espaciado interior */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 14px; /* Tamaño de fuente */
+  margin-top: 10px; /* Espaciado superior */
+  width: 100%; /* El botón ocupa todo el ancho de la tarjeta */
+}
+
+.select-button:hover {
+  background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
+.selected-character-container {
+  position: fixed; /* Ocupa toda la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente */
+  padding: 20px; /* Espaciado interior */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+  overflow: auto; /* Permite desplazamiento vertical y horizontal */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: flex-start; /* Alinea al inicio */
+}
+
+.selected-character-image {
+  width: 150px; /* Ancho de la imagen */
+  height: 150px; /* Alto de la imagen */
+  border-radius: 50%; /* Imágenes en forma de círculo */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.selected-character-details {
+  margin: 10px 0; /* Espacio entre detalles */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.episode-list {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding */
+  max-height: 300px; /* Altura máxima para la lista de episodios */
+  overflow-y: auto; /* Permite desplazamiento si hay muchos episodios */
+  width: 100%; /* Asegura que la lista ocupe el ancho completo */
+}
+
+.episode-item {
+  margin: 5px 0; /* Espacio entre episodios */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.back-button {
+  margin-top: 20px; /* Espacio superior */
+}
+
+
+  
